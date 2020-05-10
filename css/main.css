@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #999999;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    border-radius: 10%;
+    width: 80px;
+    height: 80px;
+    border: 2px solid white;
+    position: relative;
+    box-shadow: 2em 0 40px black;
+    overflow: hidden;
+    transform: scale(2);
+}
+
+.wave {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background: lightblue;
+    left: -40%;
+    bottom: -30px;
+    border-radius: 33%;
+    transform: all 1.4s linear;
+    animation: waves 4s linear infinite;
+}
+
+.lightblue {
+    background: repeating-linear-gradient(to right, white, lightblue);
+}
+
+@keyframes waves {
+    0% {
+        transform: rotate(0deg);
+        border-radius: 29%;
+        bottom: -170px;
+    }
+    45% {
+        border-radius: 39%;
+    }
+    100% {
+        transform: rotate(360deg);
+        border-radius: 50%;
+    }
+}
