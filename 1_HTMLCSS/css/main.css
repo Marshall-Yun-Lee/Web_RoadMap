@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #1a1a1a;
+    font-family: "Roboto";
+}
+
+.container_header {
+    background: #202020;
+    width: 100%;
+    height: 5em;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger {
+    margin: 0em 1em;
+    transform: scale(1.3);
+}
+
+.logo {
+    width: 8em;
+    margin: 0em 0em 0em 1em;
+}
+
+.searchBar {
+    width: 30rem;
+    height: 2.5em;
+    margin-left: 24%;
+    text-decoration: none;
+}
+
+.searchButton {
+    background: #4b4b4b;
+    margin-right: 27%;
+    padding: 0em 1.5em;
+}
+
+.icon {
+    width: 1em;
+    fill: white;
+    padding: 0.3em;
+    margin: 0.1em;
+}
+
+.options ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+}
+
+.options ul li {
+    padding: 0;
+    margin: 0;
+}
+
+.options ul li svg {
+    transform: scale(2.1);
+    margin: 1em;
+    padding: 0.1em;
+}
+
+.userAccount {
+    text-align: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    font-size: 1.3em;
+    padding: 0.3em;
+    margin: 0.2em 1em 0.2em 0.2em;
+    background-color: purple;
+    color: white;
+    border-radius: 50%;
+}
