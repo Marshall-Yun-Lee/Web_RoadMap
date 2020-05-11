@@ -10,14 +10,20 @@ body {
     font-family: "Roboto";
 }
 
+svg {
+    fill: rgb(221, 221, 221);
+}
+
+/* header */
 .container_header {
-    background: #202020;
+    background: rgb(32, 32, 32);
     width: 100%;
     height: 5em;
     display: flex;
     position: fixed;
     align-items: center;
     justify-content: center;
+    opacity: 95%;
 }
 
 .hamburger {
@@ -32,15 +38,22 @@ body {
 
 .searchBar {
     width: 30rem;
-    height: 2.5em;
+    height: 2.73em;
     margin-left: 24%;
+    background: rgb(18, 18, 18);
+    font-size: 12px;
+    padding: 2px 6px;
     text-decoration: none;
+    border: 2px solid rgb(49, 49, 49);
+    outline: none;
+    line-height: 40px;
+    color: white;
 }
 
 .searchButton {
     background: #4b4b4b;
     margin-right: 27%;
-    padding: 0em 1.5em;
+    padding: 0.2em 1.5em;
 }
 
 .icon {
@@ -74,8 +87,57 @@ body {
     height: 28px;
     font-size: 1.3em;
     padding: 0.3em;
-    margin: 0.2em 1em 0.2em 0.2em;
+    margin: 0.2em 1em;
     background-color: purple;
     color: white;
     border-radius: 50%;
 }
+
+/* End of header */
+
+/* side menu */
+.container_menu {
+    bottom: -5em;
+    position: fixed;
+    width: 12%;
+    height: 100%;
+    background-color: rgb(32, 32, 32);
+    padding-top: 1em;
+}
+
+.container_menu svg {
+    width: 1.5em;
+}
+
+.basic:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgb(100, 100, 100);
+    position: absolute;
+    z-index: 2;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+.menu_basic {
+    display: flex;
+    padding: 0.5em 1em 0.5em 1em;
+    color: rgb(221, 221, 221);
+    align-items: flex-start;
+    justify-content: left;
+    overflow: hidden;
+}
+
+.menu_basic:hover {
+    background-color: #666666;
+    cursor: pointer;
+}
+
+.menu_basic p {
+    margin-left: 1em;
+}
+
+.personalized {
+    margin-top: 1em;
+}
+/* End of side menu */
