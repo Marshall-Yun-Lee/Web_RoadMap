@@ -121,7 +121,7 @@ svg {
 }
 .menu_basic {
     display: flex;
-    padding: 0.5em 1em 0.5em 1em;
+    padding: 0.5em 1em 0.5em 2em;
     color: rgb(221, 221, 221);
     align-items: flex-start;
     justify-content: left;
@@ -140,4 +140,13 @@ svg {
 .personalized {
     margin-top: 1em;
 }
+
+.menu_hidden {
+    display: none;
+}
+
+.show-more:active > .menu_hidden {
+    display: block;
+}
+
 /* End of side menu */
