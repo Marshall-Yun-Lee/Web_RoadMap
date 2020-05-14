@@ -141,12 +141,19 @@ svg {
     margin-top: 1em;
 }
 
-.menu_hidden {
-    display: none;
+.show a {
+    text-decoration: none;
 }
 
-.show-more:active > .menu_hidden {
-    display: block;
+#cont {
+    display: none;
+    width: 100%;
+}
+#show:target #cont {
+    display: inline-block;
+}
+#show:target #show {
+    display: none;
 }
 
 /* End of side menu */

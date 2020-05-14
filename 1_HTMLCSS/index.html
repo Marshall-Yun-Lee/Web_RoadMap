@@ -269,56 +269,83 @@
                         <p>Watch later</p>
                     </div>
 
-                    <div class="menu_hidden">
-                        <!-- liked videos -->
-                        <div class="menu_basic">
-                            <svg
-                                viewBox="0 0 24 24"
-                                preserveAspectRatio="xMidYMid meet"
-                                focusable="false"
-                                class="liked-videos"
-                            >
-                                <g>
-                                    <path
-                                        d="M3.75 18.75h3v-9h-3v9zm16.5-8.25c0-.83-.68-1.5-1.5-1.5h-4.73l.7-3.43.03-.24c0-.3-.13-.6-.33-.8l-.8-.78L8.7 8.7c-.3.26-.45.64-.45 1.05v7.5c0 .82.67 1.5 1.5 1.5h6.75c.62 0 1.15-.38 1.38-.9l2.27-5.3c.06-.18.1-.36.1-.55v-1.5z"
-                                    ></path>
-                                </g>
-                            </svg>
-                            <p>Likes videos</p>
-                        </div>
+                    <div class="show" id="show">
+                        <a href="#show" id="show">
+                            <div class="menu_basic">
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    preserveAspectRatio="xMidYMid meet"
+                                    focusable="false"
+                                    class="show-more"
+                                >
+                                    <g>
+                                        <path
+                                            d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                                        ></path>
+                                    </g>
+                                </svg>
+                                <p>Show more</p>
+                            </div>
+                        </a>
+                        <!-- cont is hidden by default -->
+                        <div class="cont" id="cont">
+                            <div class="menu_hidden">
+                                <!-- liked videos -->
+                                <div class="menu_basic">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        preserveAspectRatio="xMidYMid meet"
+                                        focusable="false"
+                                        class="liked-videos"
+                                    >
+                                        <g>
+                                            <path
+                                                d="M3.75 18.75h3v-9h-3v9zm16.5-8.25c0-.83-.68-1.5-1.5-1.5h-4.73l.7-3.43.03-.24c0-.3-.13-.6-.33-.8l-.8-.78L8.7 8.7c-.3.26-.45.64-.45 1.05v7.5c0 .82.67 1.5 1.5 1.5h6.75c.62 0 1.15-.38 1.38-.9l2.27-5.3c.06-.18.1-.36.1-.55v-1.5z"
+                                            ></path>
+                                        </g>
+                                    </svg>
+                                    <p>Likes videos</p>
+                                </div>
 
-                        <div class="menu_basic">
-                            <svg
-                                viewBox="0 0 24 24"
-                                preserveAspectRatio="xMidYMid meet"
-                                focusable="false"
-                                class="play-list"
-                            >
-                                <g>
-                                    <path
-                                        d="M3.67 8.67h14V11h-14V8.67zm0-4.67h14v2.33h-14V4zm0 9.33H13v2.34H3.67v-2.34zm11.66 0v7l5.84-3.5-5.84-3.5z"
-                                    ></path>
-                                </g>
-                            </svg>
-                            <p>Play list</p>
+                                <!-- play lists -->
+                                <div class="menu_basic">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        preserveAspectRatio="xMidYMid meet"
+                                        focusable="false"
+                                        class="play-list"
+                                    >
+                                        <g>
+                                            <path
+                                                d="M3.67 8.67h14V11h-14V8.67zm0-4.67h14v2.33h-14V4zm0 9.33H13v2.34H3.67v-2.34zm11.66 0v7l5.84-3.5-5.84-3.5z"
+                                            ></path>
+                                        </g>
+                                    </svg>
+                                    <p>Play list</p>
+                                </div>
+                            </div>
+                            <!-- hide trigger button -->
+                            <a href="#hide" id="hide">
+                                <div class="menu_basic">
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        preserveAspectRatio="xMidYMid meet"
+                                        focusable="false"
+                                        class="show-less"
+                                    >
+                                        <g>
+                                            <path
+                                                d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                                            ></path>
+                                        </g>
+                                    </svg>
+                                    <p>Show less</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
+
                     <!-- show more -->
-                    <div class="menu_basic">
-                        <svg
-                            viewBox="0 0 24 24"
-                            preserveAspectRatio="xMidYMid meet"
-                            focusable="false"
-                            class="show-more"
-                        >
-                            <g>
-                                <path
-                                    d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                                ></path>
-                            </g>
-                        </svg>
-                        <p>Show more</p>
-                    </div>
                 </div>
             </div>
         </menu>
