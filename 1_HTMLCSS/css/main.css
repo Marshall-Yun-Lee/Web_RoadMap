@@ -187,12 +187,13 @@ svg {
 .suggested-topics {
     position: absolute;
     height: 4%;
-    width: 100%;
+    width: calc(100% - 4em);
     overflow: hidden;
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-left: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 .suggested-topics:after {
@@ -222,6 +223,67 @@ svg {
 }
 
 .video-contents {
-    position: relative;
-    background: yellow;
+    position: absolute;
+    top: 4%;
+    width: calc(100% - 4em);
+    margin-left: 2em;
+    height: 100%;
+    background: none;
+    overflow: scroll;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+.video-contents ul li {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    margin-top: 1px;
+}
+
+.video-card {
+    cursor: pointer;
+    width: 20.5rem;
+    height: 20rem;
+    margin: 1em 1em 1em 0;
+}
+
+.video-contents ul li .video-card:last-child {
+    margin: 1em 0 2em 0;
+}
+
+.video-card .thumbnail {
+    width: 100%;
+}
+
+.video-card .info-box {
+    display: flex;
+    align-items: flex-start;
+}
+
+.video-card .box-left .channelIcon {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 10px 0;
+}
+
+.video-card .box-right {
+    color: white;
+    padding: 3px;
+    margin: 10px;
+    justify-content: right;
+    right: 0;
+}
+
+.video-card .box-right .video-title {
+    color: white;
+    margin-bottom: 5px;
+    justify-content: left;
+}
+
+.video-card .box-right .video-info {
+    color: #7a7a7a;
 }
